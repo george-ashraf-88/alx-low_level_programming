@@ -2,11 +2,11 @@
 #include <time.h>
 #include <stdlib.h>
 
-\*
+/**
  *main - prints a random number wether is negative or postive or zero
  *
  *Return : always (0)
- *\
+ */
 
 int main(void)
 {
