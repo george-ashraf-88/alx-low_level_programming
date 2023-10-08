@@ -4,8 +4,8 @@
 
 /**
  *main - prints a random number wether is negative or postive or zero
- * descri
- *Return : always (0)
+ *descri
+ *Return: Always (0)
  */
 int main(void)
 {
