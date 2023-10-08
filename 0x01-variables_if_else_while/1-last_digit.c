@@ -3,7 +3,7 @@
 #include <stdio.h>
 
 /**
- * main -Generates random number and determines information about its last digit.
+ * main -Generates random number and determines information about last digit
  *
  * Return: Always (0)
  */
