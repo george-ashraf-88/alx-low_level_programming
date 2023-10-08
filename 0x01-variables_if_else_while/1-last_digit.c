@@ -9,9 +9,9 @@
  */
 int main(void)
 {
-
 	int n;
 	int x;
+
 	srand(time(0));
 	n = rand() - RAND_MAX / 2;
 	
@@ -32,5 +32,5 @@ int main(void)
 
 	printf("\n");
 
-	return 0;
+	return (0);
 }
