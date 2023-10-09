@@ -16,8 +16,10 @@ int main(void)
 			putchar(y + '0');
 			
 			if (x != 8 || y != 9)
+			{
 				putchar(',');
 				putchar(' ');
+			}
 		}
 	}
 
