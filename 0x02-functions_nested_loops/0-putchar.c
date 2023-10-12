@@ -7,9 +7,9 @@
  */
 int main(void)
 {
-	putchar("putchar");
+	_putchar('putchar');
 
-	putchar('\n');
+	_putchar('\n');
 
 	return (0);
 }
