@@ -1,118 +1,24 @@
-#include <stdlib.h>
-#include <time.h>
-/* more headers goes there */
+#include <stdio.h>
 
-/* betty style doc for function main goes there */
+/**
+* main - causes an infinite loop
+* Return: 0
+*/
+
 int main(void)
 {
-	int n;
+	int i;
 
-	srand(time(0));
-	n = rand() - RAND_MAX / 2;
-	/* your code goes there */
+	printf("Infinite loop incoming :(\n");
+
+	i = 0;
+
+	/**while (i < 10)
+	*{
+	*        putchar(i);
+	*}*/
+
+	printf("Infinite loop avoided! \\o/\n");
+
 	return (0);
-}#include <stdlib.h>
-#include <time.h>
-/* more headers goes there */
-
-/* betty style doc for function main goes there */
-int main(void)
-{
-		int n;
-
-			srand(time(0));
-				n = rand() - RAND_MAX / 2;
-					/* your code goes there */
-					return (0);
-}#include <stdlib.h>
-#include <time.h>
-/* more headers goes there */
-
-/* betty style doc for function main goes there */
-int main(void)
-{
-		int n;
-
-			srand(time(0));
-				n = rand() - RAND_MAX / 2;
-					/* your code goes there */
-					return (0);
-}#include <stdlib.h>
-#include <time.h>
-/* more headers goes there */
-
-/* betty style doc for function main goes there */
-int main(void)
-{
-		int n;
-
-			srand(time(0));
-				n = rand() - RAND_MAX / 2;
-					/* your code goes there */
-					return (0);
-}#include <stdlib.h>
-#include <time.h>
-/* more headers goes there */
-
-/* betty style doc for function main goes there */
-int main(void)
-{
-		int n;
-
-			srand(time(0));
-				n = rand() - RAND_MAX / 2;
-					/* your code goes there */
-					return (0);
-}#include <stdlib.h>
-#include <time.h>
-/* more headers goes there */
-
-/* betty style doc for function main goes there */
-int main(void)
-{
-		int n;
-
-			srand(time(0));
-				n = rand() - RAND_MAX / 2;
-					/* your code goes there */
-					return (0);
-}#include <stdlib.h>
-#include <time.h>
-/* more headers goes there */
-
-/* betty style doc for function main goes there */
-int main(void)
-{
-		int n;
-
-			srand(time(0));
-				n = rand() - RAND_MAX / 2;
-					/* your code goes there */
-					return (0);
-}#include <stdlib.h>
-#include <time.h>
-/* more headers goes there */
-
-/* betty style doc for function main goes there */
-int main(void)
-{
-		int n;
-
-			srand(time(0));
-				n = rand() - RAND_MAX / 2;
-					/* your code goes there */
-					return (0);
-}#include <stdlib.h>
-#include <time.h>
-/* more headers goes there */
-
-/* betty style doc for function main goes there */
-int main(void)
-{
-		int n;
-
-			srand(time(0));
-				n = rand() - RAND_MAX / 2;
-					/* your code goes there */
-					return (0);
 }
