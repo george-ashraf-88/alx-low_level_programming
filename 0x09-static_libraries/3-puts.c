@@ -1,6 +1,13 @@
 #include "main.h"
 #include <stdio.h>
 
+/**
+ * _puts - Escribir un texto
+ *
+ * @str: This is my entry
+ *
+ */
+
 void _puts(char *str)
 {
 	int i = 0;
