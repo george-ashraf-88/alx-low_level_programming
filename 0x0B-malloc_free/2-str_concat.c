@@ -2,7 +2,14 @@
 #include <string.h>
 #include "main.h"
 
-char* str_concat(char* s1, char* s2)
+/**
+ *str_concat - duplicate to new memory space location
+ *@s1: char
+ *@s2: char
+ *Return: 0
+ */
+
+char *str_concat(char *s1, char *s2)
 {
 
 	if (s1 == NULL)
@@ -14,18 +21,18 @@ char* str_concat(char* s1, char* s2)
 		s2 = "";
 	}
 
-    	size_t length1 = strlen(s1);
-	size_t length2 = strlen(s2);
+	length1 = strlen(s1);
+	length2 = strlen(s2);
 
-	char* concatenated = (char*)malloc((length1 + length2 + 1) * sizeof(char));
+	char *concatenated = (char *)malloc((length1 + length2 + 1) * sizeof(char));
 
-	if (concatenated == NULL) {
-		return NULL;
+	if (concatenated == NULL)
+	{
+		return (NULL);
 	}
 
 	strcpy(concatenated, s1);
-
 	strcat(concatenated, s2);
 
-	return concatenated;
+	return (concatenated);
 }
