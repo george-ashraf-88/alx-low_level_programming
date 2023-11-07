@@ -1,4 +1,6 @@
+#include <stdio.h>
 #include <stdlib.h>
+#include <string.h>
 #include "dog.h"
 
 /**
@@ -7,36 +9,45 @@
  * @age: age of the dog
  * @owner: owner of the dog
  *
- * Return: pointer to the new dog (Success), NULL otherwise
+ * Return: pointer to the new dog or NULL on failure
  */
-dog_t *new_dog(char *name, float age, char *owner)
-{
-	dog_t *dog;
-	int len1, len2;
+dog_t *new_dog(char *name, float age, char *owner) {
+	dog_t *newDog = malloc(sizeof(dog_t));
 
-	len1 = _strlen(name);
-	len2 = _strlen(owner);
+	if (newDog == NULL)
+		return NULL;
 
-	dog = malloc(sizeof(dog_t));
-	if (dog == NULL)
-		return (NULL);
+	newDog->name = strdup(name);
+	newDog->owner = strdup(owner);
 
-	dog->name = malloc(sizeof(char) * (len1 + 1));
-	if (dog->name == NULL)
-	{
-		free(dog);
-		return (NULL);
+	if (newDog->name == NULL || newDog->owner == NULL) {
+		free(newDog->name);
+		free(newDog->owner);
+		free(newDog);
+		return NULL;
 	}
-	dog->owner = malloc(sizeof(char) * (len2 + 1));
-	if (dog->owner == NULL)
-	{
-		free(dog);
-		free(dog->name);
-		return (NULL);
-	}
-	_strcpy(dog->name, name);
-	_strcpy(dog->owner, owner);
-	dog->age = age;
 
-	return (dog);
+	newDog->age = age;
+
+	return newDog;
 }
+
+int main(void) {
+	dog_t *my_dog;
+
+	my_dog = new_dog("Poppy", 3.5, "Bob");
+
+	if (my_dog != NULL)
+	{
+		printf("My name is %s, and I am %.1f :) - Woof!\n", my_dog->name, my_dog->age);
+		free(my_dog->name);
+		free(my_dog->owner);
+		free(my_dog);
+	}
+	else {
+		printf("Failed to create the dog.\n");
+	}
+
+	return (0);
+}
+
