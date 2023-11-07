@@ -3,6 +3,12 @@
 #include <string.h>
 #include "dog.h"
 
+typedef struct dog {
+    char *name;
+    float age;
+    char *owner;
+} dog_t;
+
 /**
  * new_dog - creates a new dog
  * @name: name of the dog
