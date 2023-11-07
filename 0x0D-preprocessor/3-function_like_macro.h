@@ -1,5 +1,5 @@
-#ifndef LIKE_MACRO_H
-#define LIKE_MACRO_H
+#ifndef FUNCTION_LIKE_MACRO_H
+#define FUNCTION_LIKE_MACRO_H
 
 int ABS(x)
 {
